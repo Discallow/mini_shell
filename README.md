@@ -1,56 +1,57 @@
-Minishell Project - 42 School
-Table of Contents
-About the Project
-Features
-Getting Started
-Installation
-Usage
-Built-in Commands
-External Commands
-Error Handling
-Resources
-Author
-About the Project
+# Minishell Project - 42 School
+
+## Table of Contents
+- [About the Project](#about-the-project)
+- [Features](#features)
+- [Getting Started](#getting-started)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Built-in Commands](#built-in-commands)
+- [External Commands](#external-commands)
+- [Error Handling](#error-handling)
+- [Resources](#resources)
+- [Author](#author)
+
+---
+
+## About the Project
 Minishell is a simplified, custom shell implementation created as part of the curriculum at 42 School. The goal of this project is to understand how a basic UNIX shell operates and to gain experience in building a command interpreter from scratch. This project is written in C and focuses on process management, input parsing, and executing commands using system calls.
 
 This project adheres to the norms and requirements of the 42 School's "Minishell" project.
 
-Features
+---
+
+## Features
 Minishell includes the following key features:
 
-Prompt display: Shows a prompt waiting for user input.
-Execution of commands: Handles external commands by searching through $PATH and forking processes.
-Built-in commands: Implements several built-in shell commands like echo, cd, pwd, export, unset, env, and exit.
-Redirections: Supports input and output redirection using > (output redirection), >> (append), and < (input redirection).
-Pipes: Executes commands in sequence while passing output from one to another using pipes (|).
-Environment Variables: Handles environment variable expansion with $.
-Signals: Manages signals like Ctrl-C, Ctrl-D, and Ctrl-\ to mimic the behavior of a typical shell.
-Error Handling: Provides meaningful error messages and handles common shell errors gracefully.
-Getting Started
-Prerequisites
+- **Prompt display**: Shows a prompt waiting for user input.
+- **Execution of commands**: Handles external commands by searching through `$PATH` and forking processes.
+- **Built-in commands**: Implements several built-in shell commands like `echo`, `cd`, `pwd`, `export`, `unset`, `env`, and `exit`.
+- **Redirections**: Supports input and output redirection using `>` (output redirection), `>>` (append), and `<` (input redirection).
+- **Pipes**: Executes commands in sequence while passing output from one to another using pipes (`|`).
+- **Environment Variables**: Handles environment variable expansion with `$`.
+- **Signals**: Manages signals like `Ctrl-C`, `Ctrl-D`, and `Ctrl-\` to mimic the behavior of a typical shell.
+- **Error Handling**: Provides meaningful error messages and handles common shell errors gracefully.
+
+---
+
+## Getting Started
+
+### Prerequisites
 To run the minishell project, you'll need:
+- A Unix-like environment (Linux or macOS)
+- GCC or another C compiler
+- The `make` utility
+- Basic knowledge of how shells and system calls work
 
-A Unix-like environment (Linux or macOS)
-GCC or another C compiler
-The make utility
-Basic knowledge of how shells and system calls work
-Installation
-Clone the repository:
+---
 
-bash
-Copiar código
-git clone https://github.com/your-username/minishell.git
-cd minishell
-Compile the project:
+## Installation
 
-bash
-Copiar código
-make
-Run the shell:
-
-bash
-Copiar código
-./minishell
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/minishell.git
+   cd minishell
 Usage
 Once you’ve started minishell, you can type commands just like in a normal shell. The prompt will appear, and you can type built-in or external commands.
 
@@ -122,7 +123,3 @@ Name: [Your Name]
 GitHub: [Your GitHub Profile]
 Conclusion
 Minishell was an exciting and challenging project, and it helped deepen my understanding of how shells work under the hood, from command execution and process handling to signal management and input/output redirection.
-
-Feel free to open issues or pull requests if you find any bugs or have suggestions for improvements!
-
-This README is a comprehensive guide for anyone who wants to understand how your shell works and how to use it. Adapt it to your specific implementation and any additional features you might have included!
