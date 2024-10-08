@@ -63,20 +63,28 @@ Example:
    $ cat file.txt | grep pattern
 ```
 ## Supported Built-in Commands
+
 `echo`: Print arguments to the standard output.
 Usage: echo [-n] [string ...]
+
 `cd`: Change the current directory.
 Usage: cd [directory]
+
 `pwd`: Print the current directory.
 Usage: pwd
+
 `export`: Set environment variables.
 Usage: export VAR=value
+
 `unset`: Remove environment variables.
 Usage: unset VAR
+
 `env`: Display environment variables.
 Usage: env
+
 `exit`: Exit the shell.
 Usage: exit [exit_code]
+
 ## External Commands
 Minishell supports external commands found in the system's $PATH. For example:
 
