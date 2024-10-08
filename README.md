@@ -108,9 +108,13 @@ Example:
 Minishell provides error messages when:
 
 A command is not found.
+
 Incorrect arguments are provided to a built-in command.
+
 Redirections or pipes fail.
+
 Invalid syntax is used (e.g., unclosed quotes, incorrect redirection).
+
 For example:
    ```bash
    $ ls | | grep
