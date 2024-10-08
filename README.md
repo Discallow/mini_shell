@@ -56,37 +56,35 @@ Usage
 Once you’ve started minishell, you can type commands just like in a normal shell. The prompt will appear, and you can type built-in or external commands.
 
 Example:
+   ```bash
+   $ ls -l
+   $ cd ..
+   $ echo "Hello, Minishell"
+   $ cat file.txt | grep pattern
 
-bash
-Copiar código
-$ ls -l
-$ cd ..
-$ echo "Hello, Minishell"
-$ cat file.txt | grep pattern
-Supported Built-in Commands
-echo: Print arguments to the standard output.
+## Supported Built-in Commands
+`echo`: Print arguments to the standard output.
 Usage: echo [-n] [string ...]
-cd: Change the current directory.
+`cd`: Change the current directory.
 Usage: cd [directory]
-pwd: Print the current directory.
+`pwd`: Print the current directory.
 Usage: pwd
-export: Set environment variables.
+`export`: Set environment variables.
 Usage: export VAR=value
-unset: Remove environment variables.
+`unset`: Remove environment variables.
 Usage: unset VAR
-env: Display environment variables.
+`env`: Display environment variables.
 Usage: env
-exit: Exit the shell.
+`exit`: Exit the shell.
 Usage: exit [exit_code]
-External Commands
+## External Commands
 Minishell supports external commands found in the system's $PATH. For example:
 
-bash
-Copiar código
-$ ls
-$ grep
-$ wc
-$ cat
+   ```bash
+   $ ls
+   $ grep
+   $ wc
+   $ cat
 You can also combine them with redirections and pipes.
 
 Redirections and Pipes
