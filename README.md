@@ -52,7 +52,7 @@ To run the minishell project, you'll need:
    ```bash
    git clone https://github.com/your-username/minishell.git
    cd minishell
-Usage
+## Usage
 Once you’ve started minishell, you can type commands just like in a normal shell. The prompt will appear, and you can type built-in or external commands.
 
 Example:
@@ -62,7 +62,7 @@ Example:
    $ echo "Hello, Minishell"
    $ cat file.txt | grep pattern
 ```
-## Supported Built-in Commands
+## Built-in Commands
 
 `echo`: Print arguments to the standard output.
 Usage: echo [-n] [string ...]
