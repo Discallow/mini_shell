@@ -61,7 +61,7 @@ Example:
    $ cd ..
    $ echo "Hello, Minishell"
    $ cat file.txt | grep pattern
-
+```
 ## Supported Built-in Commands
 `echo`: Print arguments to the standard output.
 Usage: echo [-n] [string ...]
