@@ -93,6 +93,7 @@ Minishell supports external commands found in the system's $PATH. For example:
    $ grep
    $ wc
    $ cat
+```
 You can also combine them with redirections and pipes.
 
 Redirections and Pipes
@@ -100,11 +101,10 @@ Redirect output: >, >>
 Redirect input: <
 Use pipes: |
 Example:
-
-bash
-Copiar código
-$ cat file.txt | grep search_term > result.txt
-Error Handling
+   ```bash
+   $ cat file.txt | grep search_term > result.txt
+```
+## Error Handling
 Minishell provides error messages when:
 
 A command is not found.
@@ -112,20 +112,9 @@ Incorrect arguments are provided to a built-in command.
 Redirections or pipes fail.
 Invalid syntax is used (e.g., unclosed quotes, incorrect redirection).
 For example:
-
-bash
-Copiar código
-$ ls | | grep
-minishell: syntax error near unexpected token `|'
-Resources
-For this project, I referred to the following resources:
-
-UNIX system calls: Documentation on fork(), execve(), waitpid(), pipe(), and other system calls.
-The 42 Project Subject: The official guidelines and rules of the Minishell project.
-GNU Bash Manual: To understand how typical shell features behave.
-Author
-Name: [Your Name]
-42 Login: [Your 42 Intra Login]
-GitHub: [Your GitHub Profile]
-Conclusion
-Minishell was an exciting and challenging project, and it helped deepen my understanding of how shells work under the hood, from command execution and process handling to signal management and input/output redirection.
+   ```bash
+   $ ls | | grep
+   minishell: syntax error near unexpected token `|'
+```
+## Conclusion
+Minishell was an exciting and challenging project, and it helped deepen my understanding of how shells work under the hood, from command execution and process handling to signal management and input/output redirection. It was by far my favorite project so far, since it started a journey in working on group projects and the challenges that come with that as well. I was lucky to have a great partner! 
